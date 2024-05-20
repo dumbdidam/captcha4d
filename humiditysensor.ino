@@ -39,6 +39,8 @@ void setup() {
 
 
   setupTouch();
+  
+  Serial.begin(115200);
 }
 
 void loopTouch() {
@@ -83,4 +85,9 @@ void loop() {
   delay(2000);  //delay atleast 2 seconds for DHT11 to read tha data
 
   loopTouch();
+
+  int sensorValue = analogRead(A0);
+  // print out the value you read:
+  Serial.println(sensorValue);
+  delay(1);  // delay in between reads for stability
 }
