@@ -69,7 +69,7 @@ delay(10);
 
 void loop() {
   // Assuming you want to make a tuple-like structure 
-  // int tuple[2] = {1, 2};
+  int tuple[2] = {1, 2};
 
   if (dht.getData()) {                         // get All data from DHT11
     // float tempDeg = dht.getTemperature();      // return temperature in celsius
@@ -86,6 +86,8 @@ void loop() {
   }
   delay(2000);  //delay atleast 2 seconds for DHT11 to read tha data
 
+  Serial.print(", ");
+  
   loopTouch();
 
   int sensorValue = analogRead(A0);
@@ -93,5 +95,5 @@ void loop() {
   Serial.println(sensorValue);
   delay(1);  // delay in between reads for stability
 
-  // Serial.print(", ");
+
 }
