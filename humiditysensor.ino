@@ -25,7 +25,7 @@ CapacitiveSensor capSensor = CapacitiveSensor(4, 2);
 
 
 // threshold for turning the lamp on
-int threshold = 1100;
+int threshold = 1300;
 // pin the LED is connected to
 const int ledPin = 12;
 
@@ -68,18 +68,20 @@ delay(10);
 }
 
 void loop() {
+  // Assuming you want to make a tuple-like structure 
+  // int tuple[2] = {1, 2};
 
   if (dht.getData()) {                         // get All data from DHT11
-    float tempDeg = dht.getTemperature();      // return temperature in celsius
-    float tempFar = dht.getTemperature(false);  // return temperature in fahrenheit if true celsius of false
+    // float tempDeg = dht.getTemperature();      // return temperature in celsius
+    // float tempFar = dht.getTemperature(false);  // return temperature in fahrenheit if true celsius of false
     int hum = dht.getHumidity();               // return humidity
-    String str  = "Temperature: ";
-           str += tempDeg;
-           str += "°C  ";
+    //int hum  = humv;
+           //str += tempDeg;
+           //str += "°C  ";
            //str += tempFar;
-           str += "Humidity:";
-           str += hum;
-    Serial.println(str.c_str());
+        //  str += "Humidity:";  
+           //str += hum;
+    Serial.println(hum);
     //Serial.printf("Temperature: %0.1lf°C  %0.1lf°F Humidity:%d \n", tempDeg, tempFar, hum);
   }
   delay(2000);  //delay atleast 2 seconds for DHT11 to read tha data
@@ -90,4 +92,6 @@ void loop() {
   // print out the value you read:
   Serial.println(sensorValue);
   delay(1);  // delay in between reads for stability
+
+  // Serial.print(", ");
 }
