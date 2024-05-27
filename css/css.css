@@ -11,11 +11,11 @@
   }
 
   .left {
-    width: 50%;
+    width: 45%;
   }
 
   .right {
-    width: 50%;
+    width: 55%;
   }
 
   /* Clear floats after the columns */
