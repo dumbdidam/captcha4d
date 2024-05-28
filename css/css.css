@@ -22,7 +22,7 @@
   /* Create two equal columns that sits next to each other */
   .column {
     float: left;
-    padding: 40px;
+    padding: 30px;
    
   }
 
