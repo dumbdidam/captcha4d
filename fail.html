@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/css.css">
+
+
+</head>
+<body>
+
+<video muted autoplay loop id="bg-video" src="bg2.mp4"></video>
+  
+
+<div class="row">
+  <div class="column left" >
+    <!-- <h2>Column 1</h2> -->
+    <div class="captcha">
+      <img src="captchabase.png" style="width: 490px;">
+      <button class="touchbutton" onclick="window.location.href='pages/tc.html'">Go to Page 1</button>
+      <button class="smilebutton" onclick="window.location.href='pages/sc.html'">Go to Page 2</button>
+      <button class="breathbutton" onclick="window.location.href='pages/bc.html'">Go to Page 3</button>
+      <button class="b2" onclick="window.location.href='fail.html'">fail</button>
+      <button class="b3" onclick="window.location.href='fail.html'">fail</button>
+      <button class="b4" onclick="window.location.href='fail.html'">fail</button>
+      <button class="b5" onclick="window.location.href='fail.html'">fail</button>
+      <button class="b6" onclick="window.location.href='fail.html'">fail</button>
+      <button class="b7" onclick="window.location.href='fail.html'">fail</button>
+
+
+
+      <!-- <button class="verifybutton" onclick="window.location.href='page1.html'">verify</button> -->
+      
+      
+    </div>
+  </div>
+  <div class="column right">
+    <!-- <h2>Column 2</h2>
+    <p>Some text..</p> -->
+    <div class="faildiv" onclick="window.location.href='index.html'">
+        Verification failed. Please try again.
+    </div>
+    
+    <button class="retrybutton" onclick="window.location.href='index.html'">Retry</button>
+
+  </div>
+</div>
+
+</body>
+</html>
