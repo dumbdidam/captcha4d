@@ -1,3 +1,5 @@
+// this code is adapted from https://www.youtube.com/watch?v=3yqANLRWGLo&list=LL&index=14
+
 let faceapi;
 let detections = [];
 let video;
