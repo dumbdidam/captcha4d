@@ -1,3 +1,5 @@
+// this code was adapted from https://p5js.org/examples/sound-mic-input.html
+
 let mic;
 let greenColor;
 let redColor;
